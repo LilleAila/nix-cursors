@@ -18,7 +18,7 @@ inputs = {
 Here is an example of how you can configure it with home-manager and nix-colors. The colors can be changed, or left as default. To see the available cursors, look in the `pkgs` directory, or run `nix flake show github:LilleAila/nix-cursors`.
 ```nix
 home.pointerCursor = {
-    package = outputs.packages.${pkgs.system}.bibata-original-cursor.override {
+    package = inputs.nix-cursors.packages.${pkgs.system}.bibata-original-cursor.override {
         background_color = "#${config.colorScheme.palette.base00}";
         outline_color = "#${config.colorScheme.palette.base06}";
         accent_color = "#${config.colorScheme.palette.base0B}";
