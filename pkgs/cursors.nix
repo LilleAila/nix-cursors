@@ -63,9 +63,9 @@ stdenv.mkDerivation {
     ''
     + ''
       mkdir -p bitmaps/${name}
-      find ${svg_dir}/ -name "*.svg" -exec sh -c 'inkscape --export-type=png --export-filename="bitmaps/${name}/$(basename "{}" .svg).png" "{}"' \;
+      find ${svg_dir}/ -name "*.svg" -exec sh -c 'inkscape --export-type=png --export-filename="bitmaps/${name}/$(basename "{}" .svg).png" "{}" > /dev/null 2>&1' \;
 
-      ctgen build.toml
+      ctgen build.toml > /dev/null 2>&1
     '';
 
   installPhase = ''
