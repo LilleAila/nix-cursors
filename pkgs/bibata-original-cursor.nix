@@ -42,8 +42,8 @@ pkgs.callPackage ./cursors.nix {
       if replace_crosshair
       then ''
         rm svg/original/crosshair.svg
-        # cp svg/original/lr_angle.svg svg/original/crosshair.svg
-        cp ${./cross-thin.svg} svg/original/crosshair.svg
+        cp svg/original/lr_angle.svg svg/original/crosshair.svg
+        # cp ${./cross-thin.svg} svg/original/crosshair.svg
       ''
       else ""
     }
