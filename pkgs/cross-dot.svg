@@ -26,7 +26,7 @@
      inkscape:zoom="0.59302183"
      inkscape:cx="360.86361"
      inkscape:cy="424.09906"
-     inkscape:window-width="1188"
+     inkscape:window-width="1381"
      inkscape:window-height="946"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -39,10 +39,10 @@
      inkscape:groupmode="layer"
      id="layer1">
     <circle
-       style="fill:#0000ff;stroke-width:0.1;stroke-dasharray:none"
+       style="fill:#0000ff;stroke-width:0.148306;stroke-dasharray:none"
        id="path1"
-       cx="100"
-       cy="100"
-       r="8.4285069" />
+       cx="80"
+       cy="80"
+       r="12.5" />
   </g>
 </svg>
