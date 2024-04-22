@@ -4,6 +4,7 @@
   background_color ? "#000000",
   outline_color ? "#FFFFFF",
   accent_color ? "#999999",
+  replace_cross ? false,
   ...
 }:
 pkgs.callPackage ./cursors.nix {
@@ -37,5 +38,13 @@ pkgs.callPackage ./cursors.nix {
     sed -i "s/#179DD8/${accent_color}/g" svg/original/pointer-move.svg
     sed -i "s/#4FADDF/${background_color}/g" svg/original/top_left_corner.svg
     sed -i "s/#F1613A/${background_color}/g" svg/original/top_right_corner.svg
+    ${
+      if replace_cross
+      then ''
+        rm svg/original/cross.svg
+        cp svg/original/lr_angle.svg svg/original/cross.svg
+      ''
+      else ""
+    }
   '';
 }
