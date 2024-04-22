@@ -28,3 +28,4 @@ home.pointerCursor = {
     gtk.enable = true;
 };
 ```
+The `bibata-original` cursor also has an option called `replace-crosshair`. It will replace the crosshair cursor with a left/right angle so that it does not show up in screenshots.
