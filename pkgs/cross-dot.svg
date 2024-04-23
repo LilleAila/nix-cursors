@@ -23,10 +23,10 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.59302183"
-     inkscape:cx="228.49075"
-     inkscape:cy="405.54999"
-     inkscape:window-width="1436"
+     inkscape:zoom="0.49348508"
+     inkscape:cx="79.029744"
+     inkscape:cy="377.92429"
+     inkscape:window-width="1357"
      inkscape:window-height="946"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -44,5 +44,11 @@
        cx="67.5"
        cy="67.5"
        r="17.5" />
+    <circle
+       style="fill:#00ff00;stroke-width:0.11615"
+       id="path2"
+       cx="67.5"
+       cy="67.5"
+       r="12.5" />
   </g>
 </svg>
