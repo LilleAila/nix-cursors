@@ -18,8 +18,10 @@ pkgs.callPackage ./cursors.nix {
     hash = "sha256-3S2eIJ6tEkMKWQqV3Az9R2wz48z9MljTx0Xi0jQ2AUA=";
   };
   extra_commands = ''
-    cp svg/original/left_ptr_watch/left_ptr_watch-01.svg svg/original/left_ptr_watch.svg
-    cp svg/original/wait/wait-01.svg svg/original/wait.svg
+    cp svg/original/left_ptr_watch/left_ptr_watch-54.svg svg/original/left_ptr_watch.svg
+    cp svg/original/wait/wait-54.svg svg/original/wait.svg
+    # cp svg/original/left_ptr_watch/left_ptr_watch-27.svg svg/original/left_ptr_watch.svg
+    # cp svg/original/wait/wait-27.svg svg/original/wait.svg
 
     sed -i "s/#96C865/${background_color}/g" svg/original/bottom_left_corner.svg
     sed -i "s/#FDBE2A/${background_color}/g" svg/original/bottom_right_corner.svg
