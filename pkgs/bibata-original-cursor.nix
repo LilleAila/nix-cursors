@@ -42,12 +42,25 @@ pkgs.callPackage ./cursors.nix {
     sed -i "s/#F1613A/${background_color}/g" svg/original/top_right_corner.svg
     ${
       if replace_crosshair
-      then ''
+      /*
+        then ''
         rm svg/original/crosshair.svg
         # cp svg/original/left_ptr.svg svg/original/crosshair.svg
         # cp svg/original/lr_angle.svg svg/original/crosshair.svg
         cp ${./cross-dot.svg} svg/original/crosshair.svg
         # cp ${./cross-thin.svg} svg/original/crosshair.svg
+      ''
+      */
+      then ''
+        sed -i '/^\[cursors\.crosshair\]/,/^$/d' build.toml
+        cat >> build.toml << EOF
+        [cursors.crosshair]
+        png = 'left_ptr.png'
+        x_hotspot = 55
+        y_hotspot = 17
+        win_name = 'Cross'
+        x11_name = 'crosshair'
+        EOF
       ''
       else ""
     }

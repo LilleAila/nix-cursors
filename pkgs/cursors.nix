@@ -53,7 +53,7 @@ stdenv.mkDerivation {
   # It does however work when running it directly from the terminal
   # Also the animated ones aren't animated
   buildPhase =
-    extra_commands
+    extra_commands # TODO: i think these would fit better in postPatch
     + ''
       find ${svg_dir}/ -name "*.svg" -exec sed -i 's/#00FF00/${background_color}/gi' {} \;
       find ${svg_dir}/ -name "*.svg" -exec sed -i 's/#FF0000/${background_color}/gi' {} \;
