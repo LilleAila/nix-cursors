@@ -69,9 +69,9 @@ stdenv.mkDerivation {
     '';
 
   installPhase = ''
-    # mkdir -p $out/share/icons
-    # cp -r themes/${name} $out/share/icons/
-    mkdir -p $out
-    cp -r ./* $out
+    mkdir -p $out/share/icons
+    cp -r themes/${name} $out/share/icons/
+    # mkdir -p $out
+    # cp -r ./* $out
   '';
 }
