@@ -28,4 +28,4 @@ home.pointerCursor = {
     gtk.enable = true;
 };
 ```
-The `bibata-original` cursor also has an option called `replace_crosshair`. It will replace the crosshair cursor with a dot that is slightly to the bottom-left of the center, so that it does not show in screenshots.
+The `bibata-original` and `bibata-modern` cursors also have an option called `replace_crosshair`. It will replace the crosshair cursor with the normal pointer cursor, so that it does not show up in screenshots taken from the top left.

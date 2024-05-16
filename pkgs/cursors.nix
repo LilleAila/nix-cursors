@@ -65,13 +65,13 @@ stdenv.mkDerivation {
       mkdir -p bitmaps/${name}
       find ${svg_dir}/ -name "*.svg" -exec sh -c 'inkscape --export-type=png --export-filename="bitmaps/${name}/$(basename "{}" .svg).png" "{}" > /dev/null 2>&1' \;
 
-      ctgen build.toml > /dev/null 2>&1
+      ctgen build.toml
     '';
 
   installPhase = ''
-    mkdir -p $out/share/icons
-    cp -r themes/${name} $out/share/icons/
-    # mkdir -p $out
-    # cp -r ./* $out
+    # mkdir -p $out/share/icons
+    # cp -r themes/${name} $out/share/icons/
+    mkdir -p $out
+    cp -r ./* $out
   '';
 }

@@ -4,4 +4,5 @@
   breeze-cursor = pkgs.callPackage ./breeze-cursor.nix {};
   apple-cursor = pkgs.callPackage ./apple-cursor.nix {};
   bibata-original-cursor = pkgs.callPackage ./bibata-original-cursor.nix {};
+  bibata-modern-cursor = pkgs.callPackage ./bibata-modern-cursor.nix {};
 }
