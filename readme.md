@@ -5,6 +5,7 @@
 # Examples:
 
 | ![Gruvbox cursor](./assets/gruvbox.png) | ![Catppuccin cursor](./assets/catppuccin.png) | ![OneDark cursor](./assets/onedark.png) | ![Kanagawa cursor](./assets/kanagawa.png) |
+| --- | --- | --- | --- |
 | Gruvbox | Catppuccin | OneDark | Kanagawa |
 
 ## Usage
